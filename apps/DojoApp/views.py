@@ -8,7 +8,7 @@ def index(request):
 def new(request):
     return render(request, "DojoApp/new.html")
 def create(request):
-    return redirect('/index.html')
+    return redirect('/')
 def show(request,blog):
     response = "Display Blog: %s" % blog
     return HttpResponse(response)

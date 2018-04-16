@@ -18,9 +18,6 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^', include('apps.DojoApp.urls')),
-    url(r'new', include('apps.DojoApp.urls')),
-    url(r'^create', include('apps.DojoApp.urls')),
-    url(r'^(?P<blog>\d+)$',include('apps.DojoApp.urls')),
-    url(r'^(?P<blog>\d+)/edit/$',include('apps.DojoApp.urls')),
-    url(r'^(?P<blog>\d+)/destroy/$',include('apps.DojoApp.urls')),
+    url(r'^', include('apps.surveys.urls')),
+    url(r'^', include('apps.user_app.urls'))
 ]
